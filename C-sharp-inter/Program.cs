@@ -1,13 +1,13 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using C_sharp_inter;
 
-Console.ForegroundColor = ConsoleColor.Green;
-Console.WriteLine(" ----------------------------- ");
-Console.WriteLine(" ---- Csharp Intermediate ---- ");
-Console.WriteLine(" ----------------------------- ");
-Console.ForegroundColor = ConsoleColor.White;
+Utilities.PrintTitle();
 
-Console.WriteLine("\n~~ Practice 1 ~~\n");
+Utilities.NextChapter("Loops");
+
+Loops loops = new();
+
+Utilities.NextChapter("Objects");
 
 Person person = new()
 {
@@ -19,3 +19,9 @@ var other = person.Parse("Tony");
 person.Introduce("Cory");
 
 Console.WriteLine(other);
+
+Utilities.NextChapter("Constructors");
+
+Constructors constructors = new();
+
+Utilities.ResetConsole();

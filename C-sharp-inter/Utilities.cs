@@ -1,9 +1,9 @@
-﻿using System.Drawing;
-
-namespace C_sharp_inter;
+﻿namespace C_sharp_inter;
 
 public static class Utilities
 {
+	public static int chapterCount = 1;
+
 	public static void PrintTitle()
 	{
 		Console.ForegroundColor = ConsoleColor.Green;
@@ -13,27 +13,23 @@ public static class Utilities
 		ResetConsole();
 	}
 
-	public static void NextChapter()
+	public static void NextChapter(string title)
 	{
-		int chapterCount = 0;
-
+		Console.ForegroundColor = (ConsoleColor)GetRandomColor();
+		Console.WriteLine($"\n---- [{chapterCount}] : {title} ----\n");
 		chapterCount++;
-
-		Console.ForegroundColor = GetRandomColor().ToString();
-		Console.WriteLine(" ---- Csharp Intermediate ---- ");
-		ResetConsole();
-
 	}
 
-	private static void ResetConsole()
+	public static void ResetConsole()
 	{
 		Console.ForegroundColor = ConsoleColor.White;
 	}
 
 	private static int GetRandomColor()
-	{	
+	{
 		Random random = new();
-
-		return random.Next(16);
-	} 
+		int currentColorCode = random.Next(16);
+		//Console.WriteLine("color code: {0}", currentColorCode);
+		return currentColorCode;
+	}
 }
