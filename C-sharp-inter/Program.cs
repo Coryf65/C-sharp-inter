@@ -36,4 +36,8 @@ Utilities.NextChapter("Methods");
 
 Methods methods = new();
 
+Utilities.NextChapter("Fields");
+
+Fields fields = new();
+
 Utilities.ResetConsole();
