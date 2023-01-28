@@ -16,7 +16,7 @@ public static class Utilities
 	public static void NextChapter(string title)
 	{
 		Console.ForegroundColor = (ConsoleColor)GetRandomColor();
-		Console.WriteLine($"\n---- [{chapterCount}] : {title} ----\n");
+		Console.WriteLine($"\n---- [{chapterCount}]  {title} ----\n");
 		chapterCount++;
 	}
 
