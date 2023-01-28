@@ -24,4 +24,16 @@ Utilities.NextChapter("Constructors");
 
 Constructors constructors = new();
 
+Utilities.NextChapter("Object Initializers");
+
+Console.WriteLine("Use object initializers like so...\n");
+Console.WriteLine("Object o = new()" 
+	+ "\n{" 
+	+ "\n o.Name = 'billy'" 
+	+ "\n};");
+
+Utilities.NextChapter("Methods");
+
+Methods methods = new();
+
 Utilities.ResetConsole();
