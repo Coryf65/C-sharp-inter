@@ -18,17 +18,22 @@ public class Customer
 {
 	public string Name;
 	public int Age;
+	public List<Order> Orders;
 
-	public Customer(string name)
+	public Customer()
+	{
+		Orders = new List<Order>();
+	}
+
+	public Customer(string name) : this()
 	{
 		Name = name;
 	}
 
 	// Overloading the Constructor
 	// Allows us to have options
-	public Customer(string name, int age)
+	public Customer(string name, int age) : this(name)
 	{
-		Name = name;
 		Age = age;
 	}
 
