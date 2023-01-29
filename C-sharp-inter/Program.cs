@@ -9,9 +9,9 @@ Loops loops = new();
 
 Utilities.NextChapter("Objects");
 
-Person person = new()
+Person person = new(new DateTime(1988, 1, 25))
 {
-	Name = "John"
+	Name = "James"
 };
 
 var other = person.Parse("Tony");

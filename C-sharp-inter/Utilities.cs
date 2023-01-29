@@ -28,8 +28,9 @@ public static class Utilities
 	private static int GetRandomColor()
 	{
 		Random random = new();
-		int currentColorCode = random.Next(16);
-		//Console.WriteLine("color code: {0}", currentColorCode);
+		// 1 -> 15
+		int currentColorCode = random.Next(15) + 1; // skip black == 0
+
 		return currentColorCode;
 	}
 }
