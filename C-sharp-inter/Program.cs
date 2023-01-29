@@ -40,4 +40,17 @@ Utilities.NextChapter("Fields");
 
 Fields fields = new();
 
+Utilities.NextChapter("Access Modifiers");
+
+AccessModifiers accessModifiers = new();
+
+Utilities.NextChapter("Properties");
+
+Properties properties = new();
+
+Utilities.NextChapter("Indexers");
+
+Indexers indexers = new();
+
+
 Utilities.ResetConsole();

@@ -1,6 +1,5 @@
-﻿namespace C_sharp_inter
+﻿namespace C_sharp_inter;
+
+public class Order
 {
-	public class Order
-	{
-	}
 }
