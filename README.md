@@ -44,4 +44,34 @@ Benefits
 
 - Problems with inheritance
 
+1. Easily abused by amatuer designers / developers
+
+2. Large hierarchies
+
+3. Fragility
+
+4. Tightly Coupled
+
 - Advantages of Composition over Inheritance
+
+Any Inheritance relationship can be translated to Composition.
+
+1. Greater Flexibility
+
+2. Loose Coupling
+
+## 2 types of relationships between clases
+
+1. Inheritance (IS-A)
+
+| Pros  | Cons |
+| ----- | ---- |
+| Code re-use  | Tightly coupled / fragile  |
+| easier to understand (Person is-a Animal)  | can be abused  |
+
+2. Composition (HAS-A)
+
+| Pros  | Cons |
+| ----- | ---- |
+| Great flexibility  | harder to understand |
+| Loose coupling  | |
