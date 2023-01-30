@@ -7,8 +7,8 @@ internal class Shape
 	public int X { get; set; }
 	public int Y { get; set; }
 
-	public void Draw()
+	public virtual void Draw()
 	{
-		Console.WriteLine("Shape drawn on screen.");
+		Console.WriteLine("Shape drawn on screen. using Shape class");
 	}
 }

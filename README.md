@@ -195,3 +195,33 @@ object obj = 10;
 	- Any classes: Object, Array, String, Custom Classes etc..
 
 - Longer lifetime stores larger size items
+
+## Method Overriding
+
+Modifying the implementation of an inherited method
+
+keyword *override*
+
+```C#
+
+public class Shape
+{
+	public virtual void Draw()
+	{
+		Console.WriteLine("Base Draw function.");
+	}
+}
+
+public class Circle : Shape
+{
+	// Here we are changing the behaviour of the Draw funciton
+	public override void Draw()
+	{
+		base.Draw(); // using the base functionality could be removed
+
+		Console.WriteLine("New functionality from Circle!");
+	}
+}
+```
+
+##  Polymorphism (Many Forms)

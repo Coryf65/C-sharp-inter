@@ -107,5 +107,18 @@ Console.WriteLine("Width: '{0}'", text.Width);
 
 Utilities.NextChapter("Boxing and Unboxing");
 
+Console.WriteLine("The process of converting a value type instance to an object reference.\r\n");
+
+Utilities.NextChapter("Method Overriding");
+
+// Can be a Shape Object or a Derived Class
+List<Shape> shapes = new()
+{
+	new Circle { Width = 100, Height = 100 },
+	new Rectangle { Width = 100, Height = 100 }
+};
+
+Canvas canvas = new();
+canvas.DrawShapes(shapes);
 
 Utilities.ResetConsole();
