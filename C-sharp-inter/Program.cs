@@ -1,6 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using C_sharp_inter;
 using DemoLib;
+using System.Diagnostics;
 
 Utilities.PrintTitle();
 
@@ -75,10 +76,11 @@ var installer = new Installer(logger);
 migrator.Migrate();
 installer.Install();
 
-
 Utilities.NextChapter("Black Box Metaphor");
 
 Customer customer = new();
 
+Console.WriteLine("'DemoLib.RateCalculator' class we cannot access due to the access modifiers");
+Console.WriteLine("These are marked as internal which allows us to be less coupled");
 
 Utilities.ResetConsole();
