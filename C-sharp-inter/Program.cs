@@ -89,4 +89,23 @@ Car car = new("12355888");
 
 Console.WriteLine("Note: the base class constructor will be built first");
 
+Utilities.NextChapter("Upcasting / Downcasting");
+
+// We can convert the presentation into a text object
+// Both are references to the same object in memory
+
+Console.WriteLine("We can convert the presentation into a text object");
+Text text1 = new();
+PresentationObject presObj = text1;
+
+Console.WriteLine("Setting the width to 200, from text");
+text1.Width = 200;
+Console.WriteLine("setting the Width to 100, from presObj");
+presObj.Width = 100;
+
+Console.WriteLine("Width: '{0}'", text.Width);
+
+Utilities.NextChapter("Boxing and Unboxing");
+
+
 Utilities.ResetConsole();

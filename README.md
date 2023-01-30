@@ -2,6 +2,8 @@
 
 A demo for learning more C# concepts and reviewing things. 
 
+These are some notes I found interesting or wanted to elaborate more for myself.
+
 C# .NET6 Console App
 
 ##  Inheritance
@@ -111,3 +113,48 @@ Any Inheritance relationship can be translated to Composition.
 
 	- The type or member can be accessed by types derived from the class that are declared within its containing assembly.
 
+## Upcasting and Downcasting
+
+- Conversion from a dervied class to a base class (upcasting)
+- Conversion from a base class to a derived class (downcasting)
+- The *as* and *is* keywords
+
+Upcasting (example)
+
+```C#
+Circle circle = new();
+Shape shape = circle;
+```
+
+Downcastin (example)
+
+```C#
+Circle circle = new();
+Shape shape = circle;
+
+Circle anotherCircle = (Circle)shape;
+```
+
+The *as* Keyword
+
+```C#
+Car car = obj as Car;
+
+if (car != null)
+{
+	Console.WriteLine("The conversion worked");
+}
+
+Console.WriteLine("This object is a Car!");
+```
+
+The *is* Keyword
+
+```C#
+if (obj is Car)
+{
+	Console.WriteLine("This object is a Car!");
+}
+```
+
+## Boxing and Unboxing
