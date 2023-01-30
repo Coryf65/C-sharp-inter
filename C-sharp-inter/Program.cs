@@ -83,4 +83,10 @@ Customer customer = new();
 Console.WriteLine("'DemoLib.RateCalculator' class we cannot access due to the access modifiers");
 Console.WriteLine("These are marked as internal which allows us to be less coupled");
 
+Utilities.NextChapter("Inheritence");
+
+Car car = new("12355888");
+
+Console.WriteLine("Note: the base class constructor will be built first");
+
 Utilities.ResetConsole();
