@@ -1,4 +1,6 @@
-﻿namespace C_sharp_inter;
+﻿using DemoLib;
+
+namespace C_sharp_inter;
 
 /// <summary>
 /// Notes on fields

@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C-sharp-inter", "C-sharp-inter\C-sharp-inter.csproj", "{84147567-E6A9-43DC-BE94-0A9B985032F9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "C-sharp-inter", "C-sharp-inter\C-sharp-inter.csproj", "{84147567-E6A9-43DC-BE94-0A9B985032F9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoLib", "DemoLib\DemoLib.csproj", "{E5ACE001-F47B-49D8-836D-1EC09A142756}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{84147567-E6A9-43DC-BE94-0A9B985032F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{84147567-E6A9-43DC-BE94-0A9B985032F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{84147567-E6A9-43DC-BE94-0A9B985032F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5ACE001-F47B-49D8-836D-1EC09A142756}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5ACE001-F47B-49D8-836D-1EC09A142756}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5ACE001-F47B-49D8-836D-1EC09A142756}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5ACE001-F47B-49D8-836D-1EC09A142756}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

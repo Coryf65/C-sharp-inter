@@ -1,5 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using C_sharp_inter;
+using DemoLib;
 
 Utilities.PrintTitle();
 
@@ -73,6 +74,11 @@ var installer = new Installer(logger);
 
 migrator.Migrate();
 installer.Install();
+
+
+Utilities.NextChapter("Black Box Metaphor");
+
+Customer customer = new();
 
 
 Utilities.ResetConsole();
