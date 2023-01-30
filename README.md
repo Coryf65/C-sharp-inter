@@ -75,3 +75,39 @@ Any Inheritance relationship can be translated to Composition.
 | ----- | ---- |
 | Great flexibility  | harder to understand |
 | Loose coupling  | |
+
+## Access Modifiers
+
+- Why access modifiers are important
+
+- Black box Metaphor
+	- Design a class like a black box only expose what you have to and make it simple. Like a DVD player (simple for the end user and complicated for the engineer)
+
+### Access Modifiers in C#
+
+1. Public
+
+	- The type or member can be accessed by any other code in the same assembly or another assembly that references it.
+		The accessibility level of public members of a type is controlled by the accessibility level of the type itself.
+
+2. Private
+
+	- The type or member can be accessed only by code in the same class or struct.
+
+3. Protected
+
+	- The type or member can be accessed only by code in the same class, or in a class that is derived from that class.
+
+4. Internal
+
+	- The type or member can be accessed by any code in the same assembly, but not from another assembly.
+		In other words, internal types or members can be accessed from code that is part of the same compilation.
+
+5. Protected Internal
+
+	- The type or member can be accessed by any code in the assembly in which it's declared, or from within a derived class in another assembly.
+
+6. Protected Private
+
+	- The type or member can be accessed by types derived from the class that are declared within its containing assembly.
+
