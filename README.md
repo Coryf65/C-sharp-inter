@@ -23,6 +23,7 @@ Benefits
  - *Code re-use*
  - Poymorphic behaviour
 
+ > The *Object Class* is the base of all classes in .NET
 
 ## Composition
 
@@ -158,3 +159,39 @@ if (obj is Car)
 ```
 
 ## Boxing and Unboxing
+
+The process of converting a value type instance to an object reference.
+
+exmaple:
+```C#
+int number = 10;
+object obj = number;
+
+// or
+object obj = 10;
+```
+
+> They do have a performance penalty
+
+### Types in C#
+
+#### Value Types 
+
+- are stored on the stack
+
+- examples 
+
+	- All primitive types: byte, float, int, char, bool
+	- The struct type
+
+- These have a short lifetime once out of scope they get kicked off the stack and removed from the runtime
+
+#### Reference Types
+
+- are stored in the heap
+
+- examples
+
+	- Any classes: Object, Array, String, Custom Classes etc..
+
+- Longer lifetime stores larger size items
