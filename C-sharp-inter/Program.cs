@@ -52,5 +52,27 @@ Utilities.NextChapter("Indexers");
 
 Indexers indexers = new();
 
+Utilities.NextChapter("Class Coupling");
+
+Coupling coupling = new();
+
+Utilities.NextChapter("Inheritence");
+
+Text text = new();
+
+text.Copy();
+text.Duplicate();
+text.AddHyperlink("someplace.com");
+
+Utilities.NextChapter("Composition");
+
+DBMigrator migrator = new(new Logger());
+
+var logger = new Logger();
+var installer = new Installer(logger);
+
+migrator.Migrate();
+installer.Install();
+
 
 Utilities.ResetConsole();
