@@ -2,5 +2,5 @@
 
 public class Video
 {
-
+	public string Data { get; set; }
 }

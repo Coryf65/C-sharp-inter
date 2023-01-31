@@ -134,8 +134,8 @@ Console.WriteLine("Prevents derivation of classes or overriding of methods");
 
 Utilities.NextChapter("Polymorphism");
 
-VideoEncoder encoder = new();
+VideoEncoder encoder = new(new ConsoleLogger());
 
-encoder.Encoder(new Video());
+encoder.Encode(new Video{ Data = "some demo video data!" });
 
 Utilities.ResetConsole();
