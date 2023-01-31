@@ -2,15 +2,22 @@
 
 internal class DBMigrator
 {
-	private readonly Logger _logger;
+	private readonly ILogger _logger;
 
-	public DBMigrator(Logger logger)
+	// Dependency Injection
+	public DBMigrator(ILogger logger)
 	{
 		_logger = logger;
 	}
 
 	public void Migrate()
 	{
-		_logger.Log("We are migrating the DBs . . . . .");		
+		_logger.LogInfo($"Started Migration : {DateTime.Now}");
+
+		_logger.LogInfo("We are migrating the DBs . . . . .");	
+		Thread.Sleep(1 * 1000);
+
+		_logger.LogError("Some data corrupted");
+		_logger.LogInfo($"Migration Completed : {DateTime.Now}");
 	}
 }

@@ -2,6 +2,8 @@
 using C_sharp_inter;
 using DemoLib;
 using System.Diagnostics;
+using System.Linq.Expressions;
+using System.Text;
 
 Utilities.PrintTitle();
 
@@ -68,9 +70,10 @@ text.AddHyperlink("someplace.com");
 
 Utilities.NextChapter("Composition");
 
-DBMigrator migrator = new(new Logger());
+// Here we could swap out for either a file or console logger!
+DBMigrator migrator = new(new ConsoleLogger());
 
-var logger = new Logger();
+var logger = new ConsoleLogger();
 var installer = new Installer(logger);
 
 migrator.Migrate();
@@ -127,5 +130,12 @@ Console.WriteLine("Created new class Rectangle which needs to implement Draw()")
 
 Utilities.NextChapter("Sealed Classes and Members");
 
+Console.WriteLine("Prevents derivation of classes or overriding of methods");
+
+Utilities.NextChapter("Polymorphism");
+
+VideoEncoder encoder = new();
+
+encoder.Encoder(new Video());
 
 Utilities.ResetConsole();

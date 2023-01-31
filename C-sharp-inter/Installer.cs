@@ -2,15 +2,15 @@
 
 internal class Installer
 {
-	private Logger _logger;
+	private ConsoleLogger _logger;
 
-	public Installer(Logger logger)
+	public Installer(ConsoleLogger logger)
 	{
 		_logger = logger;
 	}
 
 	public void Install()
 	{
-		_logger.Log("Installing the app now . . . ");
+		_logger.LogInfo("Installing the app now . . . ");
 	}
 }

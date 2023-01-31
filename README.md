@@ -312,8 +312,23 @@ A language construct that is similar to a class but is fundamentally different
 
 Defines the capability a class should provide
 
+> Interfaces are *NOT* multiple inheritance, they have nothing to do with inheritance they *Implement* Interfaces
+
 These help build loosley coupled apps
 
 also help improve testability 
 
 > Demo of Unit tests using XUnit and OrderingDemo, along with OrderingDemo.UnitTest
+
+Interfaces also help with Extensibility
+
+created an ILogger and now able to use a Console or a File class to write out messages!
+
+```C#
+DBMigrator migrator = new(new ConsoleLogger());
+DBMigrator migrator = new(new FileLogger(@"/log/log.txt"));
+```
+
+
+## Polymorphism
+
