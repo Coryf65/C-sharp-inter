@@ -121,4 +121,8 @@ List<Shape> shapes = new()
 Canvas canvas = new();
 canvas.DrawShapes(shapes);
 
+Utilities.NextChapter("Abstract Classes and Members");
+
+Console.WriteLine("Created new class Rectangle which needs to implement Draw()");
+
 Utilities.ResetConsole();

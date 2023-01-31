@@ -225,3 +225,57 @@ public class Circle : Shape
 ```
 
 ##  Polymorphism (Many Forms)
+
+
+## Abstract Classes and Members
+
+- The *Abstract* modifier indicates that a class or a member is missing implementation
+
+### Why
+
+When you want to provide some common behaviour, while forcing other developers to **follow your design**.
+
+### Rules
+
+- Do *not* include implementation
+```C#
+public abstract void Draw();
+```
+
+- If a member is declared as abstract, the containing class *needs*
+ to be declared as abstract too.
+```C#
+public abstract class Shape
+{
+	public abstract void Draw();
+}
+```
+
+- The Dervied class *Must* implement all abstract members from the base abstract class.
+
+- Abstract classes *cannot* be instantiated
+
+```C#
+Shape shape = new(); // Won't compile
+```
+
+Example:
+
+```C#
+public abstract class Shape
+{
+	// we are not providing an implementation
+	public abstract void Draw();
+}
+
+public class Circle : Shape
+{
+	// overriding the Draw Method
+	public override void Draw()
+	{
+		// Providing our own implementation
+		Console.WriteLine("Drawing a circle");
+	}
+}
+```
+
