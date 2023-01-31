@@ -310,6 +310,10 @@ public sealed class Circle : Shape
 
 A language construct that is similar to a class but is fundamentally different
 
+Defines the capability a class should provide
+
 These help build loosley coupled apps
 
-also help improve testability
+also help improve testability 
+
+> Demo of Unit tests using XUnit and OrderingDemo, along with OrderingDemo.UnitTest

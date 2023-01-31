@@ -1,8 +1,11 @@
 ﻿using OrderingDemo;
 
+OrderProcessor orderProcessor = new(new ShippingCalculator());
 
-OrderProcessor orderProcessor = new();
-
-Order order = new(datePlaced: DateTime.Now, totalPrice: 100f);
+Order order = new()
+{
+	TotalPrice = 100f,
+	DatePlaced = DateTime.Now
+};
 
 orderProcessor.Process(order: order);

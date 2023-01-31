@@ -2,15 +2,14 @@
 
 public class Order
 {
-	public bool IsShipped { get; internal set; }
-	public Shipment Shipment { get; internal set; }
-	public float TotalPrice { get; internal set; }
-	private readonly DateTime _datePlaced;
-
-	public Order(DateTime datePlaced, float totalPrice)
+	public int Id { get; set; }
+	public DateTime DatePlaced { get; set; }
+	public Shipment Shipment { get; set; }
+	public float TotalPrice { get; set; }
+	
+	public bool IsShipped
 	{
-		_datePlaced = datePlaced;
-		TotalPrice = totalPrice;
+		get { return Shipment != null; }
 	}
 
 }
