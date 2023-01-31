@@ -136,6 +136,9 @@ Utilities.NextChapter("Polymorphism");
 
 VideoEncoder encoder = new(new ConsoleLogger());
 
+encoder.RegisterNotificationChannel(new MailNotificationChannel());
+encoder.RegisterNotificationChannel(new SmsNotificationChannel());
+
 encoder.Encode(new Video{ Data = "some demo video data!" });
 
 Utilities.ResetConsole();

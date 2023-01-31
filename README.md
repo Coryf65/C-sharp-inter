@@ -328,7 +328,3 @@ created an ILogger and now able to use a Console or a File class to write out me
 DBMigrator migrator = new(new ConsoleLogger());
 DBMigrator migrator = new(new FileLogger(@"/log/log.txt"));
 ```
-
-
-## Polymorphism
-
