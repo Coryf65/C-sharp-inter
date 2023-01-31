@@ -279,3 +279,37 @@ public class Circle : Shape
 }
 ```
 
+## Sealed Classes and members
+
+Prevents derivation of classes or overriding of methods
+
+When applied to a class, the sealed modifier prevents other classes from inheriting from it. 
+In the following example, class B inherits from class A, but no class can inherit from class B.
+
+You can also use the sealed modifier on a method or property that overrides a virtual method or property in a base class.
+This enables you to allow classes to derive from your class and prevent them from overriding specific virtual methods or properties.
+
+To determine whether to seal a class, method, or property, you should generally consider the following two points:
+
+    1. The potential benefits that deriving classes might gain through the ability to customize your class.
+
+    2. The potential that deriving classes could modify your classes in such a way that they would no longer work correctly or as expected.
+
+
+```C#
+public sealed class Circle : Shape
+{
+	public override void Draw()
+	{
+		Console.WriteLine("Drawing a circle");
+	}
+}
+```
+
+## Interfaces
+
+A language construct that is similar to a class but is fundamentally different
+
+These help build loosley coupled apps
+
+also help improve testability

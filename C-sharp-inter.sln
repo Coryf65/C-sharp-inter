@@ -7,6 +7,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "C-sharp-inter", "C-sharp-in
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoLib", "DemoLib\DemoLib.csproj", "{E5ACE001-F47B-49D8-836D-1EC09A142756}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderingDemo", "OrderingDemo\OrderingDemo.csproj", "{A1B4941D-BD2B-4417-96A0-FFD801560C39}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderingDemo.UnitTests", "OrderingDemo.UnitTests\OrderingDemo.UnitTests.csproj", "{DF114FBC-4CC5-4CAF-BC75-DFFC86E41287}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{E5ACE001-F47B-49D8-836D-1EC09A142756}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E5ACE001-F47B-49D8-836D-1EC09A142756}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E5ACE001-F47B-49D8-836D-1EC09A142756}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1B4941D-BD2B-4417-96A0-FFD801560C39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1B4941D-BD2B-4417-96A0-FFD801560C39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1B4941D-BD2B-4417-96A0-FFD801560C39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1B4941D-BD2B-4417-96A0-FFD801560C39}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF114FBC-4CC5-4CAF-BC75-DFFC86E41287}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF114FBC-4CC5-4CAF-BC75-DFFC86E41287}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF114FBC-4CC5-4CAF-BC75-DFFC86E41287}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF114FBC-4CC5-4CAF-BC75-DFFC86E41287}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

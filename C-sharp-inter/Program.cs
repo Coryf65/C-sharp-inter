@@ -125,4 +125,7 @@ Utilities.NextChapter("Abstract Classes and Members");
 
 Console.WriteLine("Created new class Rectangle which needs to implement Draw()");
 
+Utilities.NextChapter("Sealed Classes and Members");
+
+
 Utilities.ResetConsole();
